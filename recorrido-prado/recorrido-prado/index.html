@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Distrito Candelaria — Un recorrido por la historia viva del barrio Prado</title>
+  <meta name="description" content="Recorrido diurno por el barrio Prado (La Candelaria, Medellín). Historia, arquitectura, arte y comunidad.">
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-grid">
+      <div class="brand">
+        <h1 class="title">Distrito Candelaria</h1>
+        <p class="subtitle">Un recorrido por la historia viva del barrio Prado</p>
+      </div>
+      <nav class="nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#historia">Historia</a>
+        <a href="#narrativa">Narrativa visual</a>
+        <a href="#recorridos">Recorridos</a>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="inicio" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-left">
+        <h2 class="lead-head">Prado — patrimonio, arte y comunidad</h2>
+        <p class="lead-text">Descubre las casonas, los murales y las historias que convergen en uno de los barrios más emblemáticos de La Candelaria. Este recorrido diurno propone mirar la ciudad con calma.</p>
+        <a class="btn" href="#recorridos">Ver recorridos</a>
+      </div>
+      <div class="hero-media">
+        <img src="images/portada-dia.jpg" alt="Calle con casonas en Prado" />
+      </div>
+    </div>
+  </main>
+
+  <section id="historia" class="wrap section card">
+    <h2>Historia y contexto</h2>
+    <div class="two-col">
+      <div class="col">
+        <p>El barrio Prado fue concebido en las décadas de 1920 como uno de los primeros barrios residenciales planificados de Medellín. Su arquitectura mezcla estilos neoclásicos, republicanos y art déco, con fachadas ornamentales, ventanales y patios que narran la transformación urbana de la ciudad.</p>
+        <p>Hoy Prado convive con iniciativas culturales, galerías y proyectos comunitarios que buscan recuperar y reactivar su patrimonio.</p>
+      </div>
+      <div class="col">
+        <img src="images/fachada.jpg" alt="Fachada republicana en Prado">
+      </div>
+    </div>
+  </section>
+
+  <section id="narrativa" class="wrap section">
+    <h2>Narrativa visual</h2>
+
+    <div class="cards-grid">
+      <article class="card">
+        <h3>Ambiente diurno y luz natural</h3>
+        <p>La experiencia diurna explora cómo la luz del día revela texturas, colores y detalles arquitectónicos: árboles, antejardines y fachadas cobran protagonismo.</p>
+        <img src="images/luz-natural.jpg" alt="Luz natural sobre fachada">
+      </article>
+
+      <article class="card">
+        <h3>Texturas urbanas y patrimonio</h3>
+        <p>Materiales como piedra bogotana, madera y hierro forjado cuentan la historia constructiva del barrio.</p>
+        <img src="images/texturas.jpg" alt="Detalle de textura en fachada">
+      </article>
+
+      <article class="card">
+        <h3>Arte vivo</h3>
+        <p>Murales, galerías y fachadas intervenidas muestran la vitalidad creativa del barrio durante el día.</p>
+        <img src="images/mural.jpg" alt="Mural en Prado">
+      </article>
+
+      <article class="card">
+        <h3>Figura humana y comunidad</h3>
+        <p>Las imágenes de vecinos, artistas y visitantes reafirman que Prado es un barrio vivo y compartido.</p>
+        <img src="images/comunidad.jpg" alt="Personas en una plaza">
+      </article>
+    </div>
+  </section>
+
+  <section id="recorridos" class="wrap section card">
+    <h2>Recorridos y actividades</h2>
+
+    <div class="recorrido-list">
+      <div class="recorrido">
+        <h4>Prado: Arquitectura y memoria (día)</h4>
+        <p>Duración: 2 horas · Punto de encuentro: Teatro Prado</p>
+        <p>Un recorrido por las casonas, los patios y los detalles arquitectónicos que dan identidad al barrio.</p>
+      </div>
+
+      <div class="recorrido">
+        <h4>Prado se lee con los pies</h4>
+        <p>Duración: 1.5 horas · Punto de encuentro: Casa de la Cultura</p>
+        <p>Lecturas de textos y relatos que conectan la memoria del barrio con sus calles.</p>
+      </div>
+    </div>
+
+    <h3>Mapa</h3>
+    <div class="map-wrapper">
+      <div class="map-placeholder">[Inserta aquí tu iframe de Google Maps con el punto de encuentro]</div>
+    </div>
+
+    <div class="download-qr">
+      <button id="btn-qr" class="btn-outline">Descargar PDF / QR del recorrido</button>
+      <p class="small">Este botón simula la descarga de una hoja informativa; reemplázalo con la ruta real a tu PDF o generación de QR.</p>
+    </div>
+  </section>
+
+  <section id="galeria" class="wrap section">
+    <h2>Galería del recorrido</h2>
+
+    <!-- Carrusel -->
+    <div class="carousel" id="carousel">
+      <button class="caro-btn prev" id="prev">‹</button>
+      <div class="caro-track">
+        <img src="images/galeria1.jpg" alt="Galería 1">
+        <img src="images/galeria2.jpg" alt="Galería 2">
+        <img src="images/galeria3.jpg" alt="Galería 3">
+        <img src="images/galeria4.jpg" alt="Galería 4">
+      </div>
+      <button class="caro-btn next" id="next">›</button>
+    </div>
+
+  </section>
+
+  <section id="contacto" class="wrap section card">
+    <h2>Contacto / Inscripciones</h2>
+    <p>Si quieres participar en el recorrido, inscribirte o contactar a los organizadores, completa el formulario:</p>
+
+    <form id="form-signup" class="form">
+      <label>Nombre<br><input id="name" required></label>
+      <label>Correo<br><input id="email" type="email" required></label>
+      <label>Mensaje (opcional)<br><textarea id="message"></textarea></label>
+      <button id="submit" class="btn">Enviar inscripción</button>
+      <p id="form-msg" class="small"></p>
+    </form>
+
+    <div class="credits">
+      <p>Organiza: Distrito Candelaria · Colabora: Comunidad local</p>
+      <p class="small">Créditos de diseño: Rodrigo Alberto Arango Arboleda — Universidad Católica Luis Amigó</p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2025 — Distrito Candelaria · Un recorrido por la historia viva del barrio Prado</p>
+      <p class="small">Diseño web: Rodrigo Arango · Entrega: 6 de noviembre de 2025</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
