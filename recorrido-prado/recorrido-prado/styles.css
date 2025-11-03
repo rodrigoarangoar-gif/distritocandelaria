@@ -1,0 +1,83 @@
+/* Styles for Distrito Candelaria - Recorrido Prado (editorial, diurno) */
+:root{
+  --bg:#fbfaf7;
+  --card:#ffffff;
+  --accent:#5a7a52;
+  --accent-2:#d4a15d;
+  --muted:#5f5f5f;
+  --shadow: 0 8px 20px rgba(15, 23, 17, 0.06);
+  --radius:12px;
+  --max-width:1100px;
+  --page-padding:20px;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background:var(--bg);
+  color:#222;
+  line-height:1.5;
+}
+.wrap{max-width:var(--max-width);margin:0 auto;padding:var(--page-padding)}
+
+.site-header{border-bottom:1px solid #e9e7e3;background:linear-gradient(180deg,#fff,#fbfbfb)}
+.header-grid{display:flex;align-items:center;justify-content:space-between;padding:18px 0}
+.brand .title{font-family: "Helvetica Neue", Arial, sans-serif;font-weight:700;margin:0;color:var(--accent);font-size:1.4rem}
+.brand .subtitle{margin:4px 0 0;color:var(--muted);font-size:.95rem}
+.nav a{margin-left:14px;text-decoration:none;color:var(--muted);font-weight:600}
+.nav a:hover{color:var(--accent)}
+
+.hero{padding:36px 0;background:linear-gradient(180deg,#f8fbf8,#fff)}
+.hero-inner{display:flex;gap:20px;align-items:center}
+.hero-left{flex:1}
+.hero-media{flex:1;display:flex;justify-content:center}
+.hero-media img{width:100%;max-width:480px;border-radius:12px;box-shadow:var(--shadow);object-fit:cover;height:320px}
+.lead-head{font-family:"Helvetica Neue", Arial, sans-serif;color:#12321f;font-size:2rem;margin:0 0 10px}
+.lead-text{color:var(--muted);font-size:1rem;margin-bottom:16px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn-outline{display:inline-block;padding:8px 14px;border-radius:10px;border:2px solid var(--accent);background:transparent;color:var(--accent);font-weight:600}
+
+.section{padding:28px 0}
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:20px;margin-bottom:18px}
+.two-col{display:grid;grid-template-columns:1fr 420px;gap:20px;align-items:center}
+.two-col img{width:100%;border-radius:10px;box-shadow:0 6px 16px rgba(0,0,0,0.05)}
+
+.cards-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px;margin-top:12px}
+.card article, .card .card{padding:0}
+.cards-grid .card{padding:14px}
+
+.cards-grid img{width:100%;height:160px;object-fit:cover;border-radius:8px;margin-top:10px}
+
+.recorrido-list{display:flex;flex-direction:column;gap:12px}
+.recorrido{padding:12px;border-left:4px solid var(--accent-2);background:linear-gradient(180deg,#fff,#faf8f5);border-radius:8px}
+
+.map-wrapper{margin-top:12px}
+.map-placeholder{height:220px;border-radius:8px;background:linear-gradient(180deg,#eef7ef,#f7fbf7);border:1px dashed #dcdcdc;display:flex;align-items:center;justify-content:center;color:var(--muted)}
+
+.gallery-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px}
+.gallery-grid img{width:100%;height:140px;object-fit:cover;border-radius:8px;box-shadow:0 6px 12px rgba(0,0,0,0.04)}
+
+.form label{display:block;margin-bottom:10px}
+.form input, .form textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6e6e6;font-size:1rem;resize:vertical}
+.form textarea{min-height:100px}
+.form .small{margin-top:8px;color:var(--muted)}
+
+.site-footer{padding:20px 0;border-top:1px solid #e9e7e3;margin-top:28px}
+.small{font-size:.9rem;color:var(--muted)}
+
+@media (max-width:1000px){
+  .two-col{grid-template-columns:1fr}
+  .cards-grid{grid-template-columns:1fr}
+  .hero-inner{flex-direction:column}
+  .hero-media img{height:260px}
+  .gallery-grid{grid-template-columns:repeat(2,1fr)}
+  .nav{display:none}
+}
+
+/* Carousel */
+.carousel{position:relative;display:flex;align-items:center;gap:8px;justify-content:center;margin-top:14px}
+.caro-track{overflow:hidden;width:100%;max-width:900px;border-radius:10px}
+.caro-track img{width:100%;display:none}
+.caro-track img.active{display:block;width:100%}
+.caro-btn{background:rgba(255,255,255,0.9);border:1px solid #e6e6e6;padding:8px 12px;border-radius:6px;cursor:pointer;font-size:22px}
